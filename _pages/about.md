@@ -59,7 +59,7 @@ News
 ------
 - **[May 2025]** One paper is accepted @ ICML 2025!
 - **[May 2025]** One paper is accepted @ IJCAI 2025!
-- **[Oct 2024]** [MM-SpuBench](https://arxiv.org/abs/2406.17126) is selected as Oral Presentation @ [RBFM Workshop](https://asu-apg.github.io/rbfm/), NeurIPS 2024! 
+- **[Oct 2024]** [MM-SpuBench](https://arxiv.org/abs/2406.17126) is selected as Oral Presentation @ [NeurIPS RBFM Workshop](https://asu-apg.github.io/rbfm/)! 
 - **[July 2024]** One paper is accepted @ ECCV 2024! 
 - **[Jun 2024]** Our survey paper [Spurious Correlations in Machine Learning: A Survey](https://arxiv.org/abs/2402.12715) is released and accepted at [ICML DMLR Workshop](https://dmlr.ai/cfp-icml24/).
 - **[May 2024]** One paper is accepted @ KDD 2024! 
