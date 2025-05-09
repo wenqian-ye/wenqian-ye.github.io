@@ -14,7 +14,7 @@ My research interest is to develop robust and interpretable machine learning met
 
 <!-- I am always on the lookout for research collaborations that align with my research interests. If you have any potential opportunities or ideas, feel free to contact me via email. -->
 
-<span style="color:red">I am looking for Research Intern opportunities in the cycle of 2025 Summer.</span>
+<!-- <span style="color:red">I am looking for Research Intern opportunities in the cycle of 2025 Summer.</span> -->
 
 <!-- A data-driven personal website
 ======
@@ -57,6 +57,7 @@ More info about configuring academicpages can be found in [the guide](https://ac
 
 News
 ------
+- **[May 2025]** Start my Applied Scientist Internship at Amazon!
 - **[May 2025]** One paper is accepted @ ICML 2025!
 - **[May 2025]** One paper is accepted @ IJCAI 2025!
 - **[Oct 2024]** [MM-SpuBench](https://arxiv.org/abs/2406.17126) is selected as Oral Presentation @ [NeurIPS RBFM Workshop](https://asu-apg.github.io/rbfm/)! 
