@@ -58,6 +58,7 @@ More info about configuring academicpages can be found in [the guide](https://ac
 News
 ------
 - **[May 2025]** Start my Applied Scientist Internship at Amazon!
+- **[May 2025]** One paper is accepted @ KDD 2025!
 - **[May 2025]** One paper is accepted @ ICML 2025!
 - **[May 2025]** One paper is accepted @ IJCAI 2025!
 - **[Oct 2024]** [MM-SpuBench](https://arxiv.org/abs/2406.17126) is selected as Oral Presentation @ [NeurIPS RBFM Workshop](https://asu-apg.github.io/rbfm/)! 
