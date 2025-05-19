@@ -120,7 +120,7 @@
     <nav class="navbar">
       <div class="container">
         <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href=/index.html#about>About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/index.html#bio>Bio</a></li>
           <!-- <li class="navbar-item"><a class="navbar-link" href=/index.html#bio>Bio</a></li> -->
           <li class="navbar-item"><a class="navbar-link" href=/index.html#news>News</a></li>
           <li class="navbar-item"><a class="navbar-link" href=/index.html#publications>Publications</a></li>
@@ -148,8 +148,8 @@ function unhide(divID) {
 <!-- ========== ABOUT ========== -->
 
 <div class="docs-section">
-  <span class="anchor" id="about"></span>
-  <h4>About</h4>
+  <span class="anchor" id="bio"></span>
+  <h4>Bio</h4>
 
   <p>
    I am a PhD student in Computer Science at University of Virginia, advised by Prof. Aidong Zhang. Previously, I received my M.S. in Computer Science from Courant Institute of Mathematical Sciences, New York University and my B.S. in Mathematics from University of Illinois Urbana-Champaign, with minors in Computer Science and Electrical Engineering.
@@ -207,7 +207,7 @@ function unhide(divID) {
 
     <li>
       <span class="news-date"><b>[Jun 2024]</b></span>
-      Our  <a href="https://arxiv.org/abs/2402.12715" target="_blank">survey paper on spurious correlations</a> is released and presented at <a href="https://dmlr.ai/cfp-icml24/" target="_blank"> CML DMLR Workshop</a>.
+      Our  <a href="https://arxiv.org/abs/2402.12715" target="_blank">survey paper on spurious correlations</a> is released and presented at <a href="https://dmlr.ai/cfp-icml24/" target="_blank"> ICML DMLR Workshop</a>.
     </li>
 
     <li>
@@ -227,7 +227,7 @@ function unhide(divID) {
 
     <li>
       <span class="news-date"><b>[Nov 2023]</b></span>
-      Co-organize the <a href="https://llvm-ad.github.io/" target="_blank">1st WACV Workshop on Large Language and Vision Models for Autonomous Driving (LLVM-AD)</a>.
+      Co-organize the <a href="https://llvm-ad.github.io/" target="_blank">1st WACV LLVM-AD Workshop </a>.
     </li>
 
     <li>
@@ -266,11 +266,11 @@ function unhide(divID) {
 <div class="docs-section">
   <h4>Publications</h4>
   
-  <p><i>† indicates equal contribution.</i></p>
+  <p><i>◆ indicates equal contribution.</i></p>
 
   <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-selected" font-size: 10px>Selected</div></li>
-    <li><div class="button" data-ref="#papers-all" font-size: 10px>All</div></li>
+    <li><div class="button active" data-ref="#papers-selected" font-size: 16px>Selected</div></li>
+    <li><div class="button" data-ref="#papers-all" font-size: 16px>All</div></li>
   </ul>
 
 
@@ -291,16 +291,6 @@ function unhide(divID) {
           <p class="title"><b>NeuronTune: Towards Self-Guided Spurious Bias Mitigation</b></p>
           <p>Guangtao Zheng, <b>Wenqian Ye</b>, Aidong Zhang</p>
           <p><i><b>ICML'25</b>: International Conference on Machine Learning. 2025.</i></p>
-          <div class="paper-buttons">
-            <a class="button" href="#" target="_blank">pdf</a>
-          </div>
-        </div>
-
-        <span class="anchor" id="IJCAI-2025"></span>
-        <div class="paper">
-          <p class="title"><b>ShortcutProbe: Probing Prediction Shortcuts for Learning Robust Models</b></p>
-          <p>Guangtao Zheng, <b>Wenqian Ye</b>, Aidong Zhang</p>
-          <p><i><b>IJCAI'25</b>: International Joint Conference on Artificial Intelligence. 2025.</i></p>
           <div class="paper-buttons">
             <a class="button" href="#" target="_blank">pdf</a>
           </div>
@@ -346,16 +336,6 @@ function unhide(divID) {
           </div>
         </div>
 
-        <span class="anchor" id="IJCAI-2024"></span>
-        <div class="paper">
-          <p class="title"><b>Learning Robust Classifiers with Self-Guided Spurious Correlation Mitigation</b></p>
-          <p>Guangtao Zheng, <b>Wenqian Ye</b>, Aidong Zhang</p>
-          <p><i><b>IJCAI'24</b>: International Joint Conference on Artificial Intelligence. 2024.</i></p>
-          <div class="paper-buttons">
-            <a class="button" href="https://arxiv.org/abs/2405.03649" target="_blank">pdf</a>
-          </div>
-        </div>
-
         <span class="anchor" id="UAI-2023"></span>
         <div class="paper">
           <p class="title"><b>Mitigating Transformer Overconfidence via Lipschitz Regularization</b></p>
@@ -369,7 +349,7 @@ function unhide(divID) {
         <span class="anchor" id="ICASSP-2023"></span>
         <div class="paper">
           <p class="title"><b>ViTASD: Robust ViT Baselines for Autism Spectrum Disorder Facial Detection</b></p>
-          <p>Xu Cao†, <b>Wenqian Ye†</b>, Elena Sizikova, Xue Bai, Megan Coffee, Hongwu Zeng, Jianguo Cao</p>
+          <p>Xu Cao◆, <b>Wenqian Ye◆</b>, Elena Sizikova, Xue Bai, Megan Coffee, Hongwu Zeng, Jianguo Cao</p>
           <p><i><b>ICASSP'23</b>: IEEE International Conference on Acoustics, Speech, and Signal Processing. 2023.</i></p>
           <div class="paper-buttons">
             <a class="button" href="https://arxiv.org/abs/2210.16943" target="_blank">pdf</a>
@@ -412,7 +392,7 @@ function unhide(divID) {
         <div class="paper">
           <p class="title"><b>MM-SpuBench: Towards Better Understanding of Spurious Biases in Multimodal LLMs</b></p>
           <p><b>Wenqian Ye</b>, Guangtao Zheng, Yunsheng Ma, Xu Cao, Bolin Lai, James Rehg, Aidong Zhang</p>
-          <p><i><b>NeurIPS Workshop on RBFM 2024</b>. <b>Oral Presentation</b></i></p>
+          <p><i><b>NeurIPS'24</b> Workshop on RBFM <b style="color: #bf1a1a;">(Oral Presentation)</b>. 2024.</i></p>
           <div class="paper-buttons">
             <a class="button" href="https://arxiv.org/abs/2406.17126" target="_blank">pdf</a>
           </div>
@@ -422,7 +402,7 @@ function unhide(divID) {
         <div class="paper">
           <p class="title"><b>Spurious Correlations in Machine Learning: A Survey</b></p>
           <p><b>Wenqian Ye</b>, Guangtao Zheng, Xu Cao, Yunsheng Ma, Aidong Zhang</p>
-          <p><i><b>ICML Workshop on DMLR 2024</b></i></p>
+          <p><i><b>ICML'24</b> Workshop on DMLR. 2024.</i></p>
           <div class="paper-buttons">
             <a class="button" href="https://arxiv.org/abs/2402.12715" target="_blank">pdf</a>
           </div>
@@ -461,7 +441,7 @@ function unhide(divID) {
         <span class="anchor" id="ML4H-2024-1-all"></span>
         <div class="paper">
           <p class="title"><b>MpoxVLM: A Vision-Language Model for Diagnosing Skin Lesions from Mpox Virus Infection</b></p>
-          <p>Xu Cao†, <b>Wenqian Ye†</b>, Kenny Moise, Megan Coffee</p>
+          <p>Xu Cao◆, <b>Wenqian Ye◆</b>, Kenny Moise, Megan Coffee</p>
           <p><i><b>ML4H'24</b>: Machine Learning for Health Symposium. 2024.</i></p>
           <div class="paper-buttons">
             <a class="button" href="https://arxiv.org/abs/2411.10888" target="_blank">pdf</a>
@@ -521,7 +501,7 @@ function unhide(divID) {
         <span class="anchor" id="ICASSP-2023-all"></span>
         <div class="paper">
           <p class="title"><b>ViTASD: Robust ViT Baselines for Autism Spectrum Disorder Facial Detection</b></p>
-          <p>Xu Cao†, <b>Wenqian Ye†</b>, Elena Sizikova, Xue Bai, Megan Coffee, Hongwu Zeng, Jianguo Cao</p>
+          <p>Xu Cao◆, <b>Wenqian Ye◆</b>, Elena Sizikova, Xue Bai, Megan Coffee, Hongwu Zeng, Jianguo Cao</p>
           <p><i><b>ICASSP'23</b>: IEEE International Conference on Acoustics, Speech, and Signal Processing. 2023.</i></p>
           <div class="paper-buttons">
             <a class="button" href="https://arxiv.org/abs/2210.16943" target="_blank">pdf</a>
@@ -541,8 +521,8 @@ function unhide(divID) {
         <span class="anchor" id="AAAI-UDM-2023-all"></span>
         <div class="paper">
           <p class="title"><b>Uncertainty Estimation in Deterministic Vision Transformer</b></p>
-          <p><b>Wenqian Ye†</b>, Yunsheng Ma†, Xu Cao</p>
-          <p><i><b>AAAI Workshop on UDM'23</b>: Uncertainty Reasoning and Quantification in Decision Making. 2023.</i></p>
+          <p><b>Wenqian Ye◆</b>, Yunsheng Ma◆, Xu Cao</p>
+          <p><i><b>AAAI'23 UDM Workshop</b>: Uncertainty Reasoning and Quantification in Decision Making. 2023.</i></p>
           <div class="paper-buttons">
             <a class="button" href="https://charliezhaoyinpeng.github.io/UDM-AAAI23/assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf" target="_blank">pdf</a>
           </div>
@@ -557,15 +537,26 @@ function unhide(divID) {
 <div class="docs-section">
   <h4>Teaching</h4>
 
-  <p>
-    Current and past courses I have taught or TA'd:
-    <ul>
-    <li> Spring 2025: <a href="https://www.cs.virginia.edu/~rmw7my/Teaching/cs6501-4501-analyzing-online-behavior.html"> Analyzing Online Behavior for Public Health (CS 4501/6501)</a> ,Teaching Assistant (UVA)
-    <li> Fall 2024: <a href="https://yumeng5.github.io/teaching/2024-fall-cs4501"> Natural Language Processing (CS 4501)</a>, Teaching Assistant (UVA)
-    <li> Fall 2024: <a href=""> Machine Learning (CS 6501)</a>, Guest Lecture (UVA)
-    <li> Fall 2021: <a href="https://nyu-cs2590.github.io/fall2021/"> Natural Language Processing (CSCI-GA 2590)</a>, Teaching Assistant (NYU)
-    </ul>
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#teaching-ta" font-size: 16px>TA</div></li>
+    <li><div class="button" data-ref="#teaching-guest" font-size: 16px>Guest Lecture</div></li>
+  </ul>
 
+  <div class="tab-content">
+    <div class="tab-pane active" id="teaching-ta">
+      <ul>
+        <li> Spring 2025: <a href="https://www.cs.virginia.edu/~rmw7my/Teaching/cs6501-4501-analyzing-online-behavior.html"> Analyzing Online Behavior for Public Health (CS 4501/6501)</a> ,Teaching Assistant (UVA)</li>
+        <li> Fall 2024: <a href="https://yumeng5.github.io/teaching/2024-fall-cs4501"> Natural Language Processing (CS 4501)</a>, Teaching Assistant (UVA)</li>
+        <li> Fall 2021: <a href="https://nyu-cs2590.github.io/fall2021/"> Natural Language Processing (CSCI-GA 2590)</a>, Teaching Assistant (NYU)</li>
+      </ul>
+    </div>
+    
+    <div class="tab-pane" id="teaching-guest">
+      <ul>
+        <li> Fall 2024: <a href=""> Machine Learning (CS 6501)</a>, Guest Lecture (UVA)</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 <!-- ========== RESUME ========== -->
@@ -648,17 +639,17 @@ function unhide(divID) {
 
   <p><b>Organizer / Chair</b></p>
   <ul>
-    <li>LLVM-AD Workshops (WACV 2024; ITSC 2024; WACV 2025)</li>
-    <li>Workshop on AI for Children, AI4CHL (ICLR 2025)</li>
-    <li>Workshop on Distillation of Foundation Models for Autonomous Driving, WDFM-AD (CVPR 2025)</li>
-    <li>Roundtable Chair at ML4H 2024</li>
+    <li>LLVM-AD Workshops (<a href="https://llvm-ad.github.io/WACV_2024/" target="_blank">WACV 2024</a>; <a href="https://llvm-ad.github.io/ITSC_2024/" target="_blank">ITSC 2024</a>; <a href="https://llvm-ad.github.io/" target="_blank">WACV 2025</a>)</li>
+    <li>Workshop on AI for Children, AI4CHL (<a href="https://pediamedai.com/ai4chl/" target="_blank">ICLR 2025</a>)</li>
+    <li>Workshop on Distillation of Foundation Models for Autonomous Driving, WDFM-AD (<a href="https://wdfm-ad.github.io/" target="_blank">CVPR 2025</a>)</li>
+    <li>Roundtable Chair at <a href="https://ahli.cc/ml4h/team/" target="_blank">ML4H 2024</a></li>
   </ul>
 
-  <p><b>Program Committee</b></p>
+  <p><b>Program Committee / Reviewer</b></p>
   <ul>
     <li><b>Journals:</b> IEEE IoT-J; IEEE IJHCI; IEEE T-IV; IEEE VTM; IEEE Internet Computing</li>
     <li><b>Conferences:</b> ICML; ICLR; NeurIPS; KDD; CVPR; ECCV; ICCV; AAAI; IJCAI; AISTATS; ICASSP; MICCAI; ISBI; ACML</li>
-    <li><b>Workshops:</b> DMLR(ICML); MLSP; VTTA(NeurIPS); NIVIT(ICCV); UDM(AAAI, KDD)</li>
+    <li><b>Workshops:</b> DMLR(ICML); IEEE MLSP; VTTA(NeurIPS); NIVIT(ICCV); UDM(AAAI, KDD)</li>
   </ul>
   
   <p><b>Mentorship</b></p>
