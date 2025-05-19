@@ -349,3 +349,22 @@ a:hover {
 .docs-section ul li {
     margin-bottom: 12px;
 }
+
+/* Make tab buttons larger */
+.tab-nav .button {
+    height: 32px;          /* Increased from 25px */
+    padding: 0 15px;       /* Increased horizontal padding from 10px */
+    font-size: 16px;       /* Explicit font size */
+    line-height: 32px;     /* Match the new height */
+    font-weight: 500;      /* Medium weight for better visibility */
+}
+
+/* Active tab styling */
+.tab-nav .button.active {
+    font-weight: 600;      /* Make active tab slightly bolder */
+}
+
+/* Optional: Add more space around the tab container */
+.tab-nav {
+    margin: 20px 0;        /* Add some vertical spacing */
+}
