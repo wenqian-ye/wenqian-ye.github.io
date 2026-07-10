@@ -1,0 +1,324 @@
+/* ==========================================================================
+   Wenqian Ye — academic site
+   Shared stylesheet. Teal accent, Apple system font, single 860px column.
+   ========================================================================== */
+
+:root {
+  --accent: #0d9488;
+  --accent-dark: #0b7d72;
+  --accent-pale: #e6f7f5;
+  --accent-border: #b2e8e3;
+  --ink: #222;
+  --muted: #555;
+  --muted-2: #777;
+  --muted-3: #888;
+  --line: #e0e0e0;
+  --line-soft: #f0f0f0;
+  --award: #b45309;
+  --award-bg: #fff4e6;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Top navigation ─────────────────────────────────────────────────────── */
+nav {
+  border-bottom: 1px solid var(--line);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: saturate(180%) blur(8px);
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  z-index: 10;
+  flex-wrap: wrap;
+}
+nav .site-name { font-weight: 600; font-size: 15px; color: var(--ink); }
+nav .site-name:hover { text-decoration: none; color: var(--accent); }
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav ul a { font-size: 14px; color: var(--muted); }
+nav ul a:hover { color: var(--accent); text-decoration: none; }
+nav ul a.active { color: var(--accent); font-weight: 600; }
+
+/* ── Layout ─────────────────────────────────────────────────────────────── */
+.container { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+section { margin-bottom: 2.5rem; }
+
+h1.page-title { font-size: 22px; font-weight: 600; margin-bottom: 0.5rem; }
+
+h2 {
+  font-size: 17px;
+  font-weight: 600;
+  border-bottom: 1.5px solid var(--line);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+h2 .count { color: var(--muted-3); font-weight: 500; font-size: 13px; }
+
+h3.sub { font-size: 14px; font-weight: 600; color: var(--muted-2); margin: 1.2rem 0 0.6rem; }
+
+p { margin-bottom: 0.75rem; }
+.lead { font-size: 15px; }
+
+/* ── Profile header ─────────────────────────────────────────────────────── */
+.profile { display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2.5rem; }
+.profile img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  flex-shrink: 0;
+  border: 3px solid var(--line-soft);
+}
+.profile h1 { font-size: 24px; font-weight: 700; margin-bottom: 0.15rem; }
+.profile h1 .cn { font-weight: 400; font-size: 20px; color: #333; margin-left: 3px; }
+.profile h1 .pronoun { font-weight: 400; font-size: 14px; color: var(--muted-2); margin-left: 2px; }
+.profile .role { font-size: 14px; color: var(--muted); margin-bottom: 0.5rem; }
+.profile .role a { color: var(--muted); font-weight: 600; }
+.profile .contact { font-size: 14px; color: var(--muted); margin-bottom: 0.2rem; }
+.profile .contact a { color: var(--muted); }
+
+/* ── Link pills ─────────────────────────────────────────────────────────── */
+.links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.8rem 0 0.2rem; }
+.links a {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 3px 14px;
+  font-weight: 500;
+  background: var(--accent-pale);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  transition: opacity 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.links a:hover { opacity: 0.8; text-decoration: none; }
+.links a i { font-size: 13px; }
+
+/* ── Research-vision callout ────────────────────────────────────────────── */
+.bio-vision {
+  font-size: 15px;
+  color: #333;
+  background: var(--accent-pale);
+  border-left: 3px solid var(--accent);
+  padding: 0.7rem 1rem;
+  border-radius: 0 6px 6px 0;
+  margin: 1rem 0 0;
+  font-style: italic;
+}
+
+/* ── Research interests list (themed) ──────────────────────────────────── */
+ul.interests { list-style: none; padding: 0; }
+ul.interests > li {
+  font-size: 15px;
+  margin-bottom: 0.85rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent-border);
+}
+ul.interests .theme { color: var(--accent-dark); font-weight: 700; }
+ul.interests .reps { color: var(--muted-2); }
+.ri-intro { font-size: 15.5px; color: #333; margin-bottom: 1rem; }
+.ri-intro strong { color: var(--accent-dark); font-weight: 700; }
+.ri-intro .hl {
+  background: var(--accent-pale);
+  color: var(--accent-dark);
+  font-weight: 700;
+  padding: 0 5px;
+  border-radius: 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* ── Plain / education lists ───────────────────────────────────────────── */
+ul.plain { padding-left: 1.3rem; }
+ul.plain li { margin-bottom: 0.35rem; font-size: 15px; }
+ul.edu { list-style: none; padding: 0; }
+ul.edu li {
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+ul.edu li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--muted-3);
+  font-size: 11px;
+  top: 4px;
+}
+ul.edu .school { font-weight: 600; }
+ul.edu .degree { color: var(--muted); }
+ul.edu .yr { color: var(--muted-3); font-size: 13px; }
+
+/* ── News table ─────────────────────────────────────────────────────────── */
+.news-wrap { max-height: 360px; overflow-y: auto; padding-right: 4px; }
+.news-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.news-table td { padding: 7px 8px; vertical-align: top; border-bottom: 1px solid var(--line-soft); }
+.news-table td:first-child { white-space: nowrap; color: var(--muted-3); width: 78px; font-variant-numeric: tabular-nums; }
+
+/* ── Venue tags & award badges ─────────────────────────────────────────── */
+.venue-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 3px;
+  padding: 1px 7px;
+  margin-right: 4px;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+}
+.venue-tag.preprint { background: var(--muted-2); }
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  background: #e8f4e8;
+  color: #2a7a2a;
+  border-radius: 3px;
+  padding: 1px 7px;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+.badge.award { background: var(--award-bg); color: var(--award); }
+
+/* ── Papers ─────────────────────────────────────────────────────────────── */
+.year-head {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted-3);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 1.6rem 0 0.9rem;
+}
+.year-head:first-child { margin-top: 0.5rem; }
+.paper {
+  margin-bottom: 1.15rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--line);
+}
+.paper .title { font-size: 15px; font-weight: 600; line-height: 1.4; margin: 3px 0 0; }
+.paper .authors { font-size: 13px; color: var(--muted); margin-top: 2px; }
+.paper .authors .me { font-weight: 700; color: var(--ink); }
+.paper .journal { font-size: 13px; color: var(--muted-2); font-style: italic; }
+.paper .note { font-size: 12.5px; color: var(--muted-2); margin-top: 1px; }
+.paper .paper-links { margin-top: 5px; display: flex; gap: 0.45rem; flex-wrap: wrap; }
+.paper .paper-links a {
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 1px 9px;
+  color: #333;
+}
+.paper .paper-links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+/* ── Tabs ───────────────────────────────────────────────────────────────── */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1.2rem 0 1.6rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.6rem;
+}
+.tab-btn {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.tab-btn:hover { border-color: var(--accent-border); color: var(--accent); }
+.tab-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.tab-pane { display: none; }
+.tab-pane.active { display: block; }
+
+/* ── Timeline (experience) ─────────────────────────────────────────────── */
+ul.timeline { list-style: none; padding: 0; }
+ul.timeline > li {
+  position: relative;
+  padding: 0 0 1.4rem 1.6rem;
+  border-left: 2px solid var(--line);
+}
+ul.timeline > li:last-child { border-left-color: transparent; padding-bottom: 0.2rem; }
+ul.timeline > li::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid #fff;
+}
+.tl-top { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; align-items: baseline; }
+.tl-org { font-weight: 600; font-size: 15px; display: inline-flex; align-items: center; gap: 9px; }
+.tl-logo {
+  width: 22px; height: 22px;
+  border-radius: 5px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--line-soft);
+  padding: 1px;
+  flex-shrink: 0;
+}
+.tl-time { color: var(--muted-3); font-size: 13px; white-space: nowrap; }
+.tl-role { font-style: italic; color: var(--muted); font-size: 14px; }
+.tl-desc { font-size: 14px; color: var(--muted); margin-top: 2px; }
+
+/* ── Honors / service lists ────────────────────────────────────────────── */
+ul.honors { list-style: none; padding: 0; }
+ul.honors li { font-size: 15px; margin-bottom: 0.5rem; display: flex; gap: 0.8rem; }
+ul.honors .hy { color: var(--muted-3); font-size: 13px; min-width: 42px; white-space: nowrap; padding-top: 1px; }
+
+/* ── Footer ─────────────────────────────────────────────────────────────── */
+footer.site {
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  padding: 2rem 1.5rem 1.5rem;
+  border-top: 1px solid var(--line-soft);
+  max-width: 860px;
+  margin: 0 auto;
+}
+footer.site a { color: #999; }
+
+/* ── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  nav { padding: 0.5rem 1.2rem; }
+  nav ul { gap: 0.75rem; width: 100%; margin-top: 0.3rem; }
+  nav ul a { font-size: 13px; }
+  .profile { flex-direction: column; align-items: center; text-align: center; }
+  .profile img { width: 160px; height: 195px; }
+  .links { justify-content: center; }
+  .bio-vision { text-align: left; }
+  .tl-top { flex-direction: column; gap: 0.1rem; }
+}
